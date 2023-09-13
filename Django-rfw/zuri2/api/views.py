@@ -6,6 +6,7 @@ from .models import Person
 from rest_framework.response import Response
 from .serializers import PersonSerializer
 
+
 class PersonCreate(generics.ListCreateAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonSerializer
